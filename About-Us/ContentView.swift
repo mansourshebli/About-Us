@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Mansour")
+            // Run the program; so u can click the button!
+            MansourView()
                 .tabItem {
                     Label("Mansour", systemImage: "person")
                 }
