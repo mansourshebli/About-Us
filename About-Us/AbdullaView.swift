@@ -17,7 +17,7 @@ struct AbdullaView: View {
             
             VStack {
                 Spacer()
-                
+                    .frame(height: 50)
                 Image("Abdulla")
                     .resizable()
                     .frame(width: 150, height: 150)
@@ -27,10 +27,11 @@ struct AbdullaView: View {
                             .stroke(Color.white, lineWidth: 5)
                     )
                     .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5)
+                
                 Text("Abdulla")
                     .font(.system(size: 50, weight: .ultraLight))
                     .foregroundColor(textColor)
-                    .offset(y: 0)
+                    .offset(y: -20)
                 
                 Spacer()
                     .frame(height: 30)
@@ -57,7 +58,6 @@ struct AbdullaView: View {
                     
                     HStack(spacing: 20) {
                         SocialButton(icon: "camera.fill", color: Color.pink, url: "https://www.instagram.com/abds.92", label: "Instagram")
-
                     }
                 }
                 .padding(.bottom, 20)
