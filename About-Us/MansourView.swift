@@ -60,16 +60,16 @@ struct MansourView: View {
                     Image("MyImage")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 150, height: 150)
+                        .frame(width: 120, height: 130)
                         .mask {
                             Circle()
                         }
                         .rotation3DEffect(.degrees(-10), axis: (x: -1, y: 0, z: 0))
                         .offset(x: 110, y: -70)
                     
-                    Text("Tech enthusiast, coder, fueled by curiosity, passionate about science, always eager to learn and explore!")
+                    Text("Tech enthusiast, coder, fueled by curiosity, passionate about science and Astronomy, always eager to learn and explore!")
                         .multilineTextAlignment(.leading)
-                        .font(.system(.title2, design: .monospaced))
+                        .font(.system(.title3, design: .monospaced))
                         .frame(width: 305, height: 200)
                         .offset(x: 5, y: 75)
                 }
